@@ -1,0 +1,16 @@
+{
+    "automock": false,
+    "browser": true,
+    "testURL": "http://localhost/",
+    "moduleFileExtensions": ["js", "jsx"],
+    "moduleDirectories": ["node_modules"],
+    "transform": {
+        "^.+\\.jsx?$": "babel-jest"
+    },
+    "rootDir": "./",
+    "testRegex": "./src/app/.*spec\\.js$",
+    "verbose": true,
+    "setupFiles": ["./src/app/test/setup.js"],
+    "coverageDirectory": "../../Reports/unit-test",
+    "coverageReporters": ["json", "lcov", "text"]
+}

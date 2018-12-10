@@ -1,0 +1,41 @@
+{
+    "name": "nextgenerationprototype",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "precommit": "lint-staged --config app_modules/hooks/.lintstagedrc",
+        "cosmics": "prettier --config app_modules/cosmics/prettier/.prettierrc --write \"app/**/*.{js,scss}\"",
+        "lint:js": "eslint --config app_modules/linter/js-linter/.eslintrc app/**/*.js",
+        "lint:style": "stylelint --config app_modules/linter/style-linter/.stylelintrc \"app/**/*.{scss}\"",
+        "linter": "npm-run-all --parallel lint:js lint:style"
+    },
+    "author": "Harish Singh Dhami <hsd.1989@gmail.com> (https://github.com/hdhami)",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.1.2",
+        "babel-eslint": "^10.0.1",
+        "babel-loader": "^8.0.4",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "enzyme": "^3.7.0",
+        "enzyme-adapter-react-16": "^1.6.0",
+        "enzyme-to-json": "^3.3.4",
+        "eslint": "^5.8.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-config-prettier": "^3.1.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jsx-a11y": "^6.1.2",
+        "eslint-plugin-prettier": "^3.0.0",
+        "eslint-plugin-react": "^7.11.1",
+        "husky": "^1.1.3",
+        "jest": "^23.6.0",
+        "lint-staged": "^8.0.4",
+        "npm-run-all": "^4.1.5",
+        "pa11y": "^5.1.0",
+        "pa11y-ci": "^2.1.1",
+        "prettier": "1.15.3",
+        "react": "^16.6.3",
+        "stylelint": "^9.7.1",
+        "webpack": "^4.25.1"
+    }
+}
