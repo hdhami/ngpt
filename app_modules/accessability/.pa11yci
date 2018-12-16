@@ -1,7 +1,0 @@
-{
-  "defaults": {
-    "standard": "WCAG2AA",
-    "ignore": [ "notice", "warning" ]
-  },
-  "urls": []
-}
