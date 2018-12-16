@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "precommit": "lint-staged --config app_modules/hooks/.lintstagedrc",
-        "cosmics": "prettier --config app_modules/cosmics/prettier/.prettierrc --write \"app/**/*.{js,scss}\"",
-        "lint:js": "eslint --config app_modules/linter/js-linter/.eslintrc app/**/*.js",
-        "lint:style": "stylelint --config app_modules/linter/style-linter/.stylelintrc \"app/**/*.{scss}\"",
+        "precommit": "lint-staged --config src/client/app_modules/hooks/husky/.lintstagedrc",
+        "cosmics": "prettier --config src/client/app_modules/cosmics/prettier/.prettierrc --write \"app/**/*.{js,scss}\"",
+        "lint:js": "eslint --config src/client/app_modules/linter/js-linter/.eslintrc app/**/*.js",
+        "lint:style": "stylelint --config src/client/app_modules/linter/style-linter/.stylelintrc \"app/**/*.{scss}\"",
         "linter": "npm-run-all --parallel lint:js lint:style"
     },
     "author": "Harish Singh Dhami <hsd.1989@gmail.com> (https://github.com/hdhami)",
