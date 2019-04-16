@@ -16,6 +16,8 @@
     "plugins": ["prettier", "react", "jsx-a11y"],
     "extends": ["eslint:recommended", "airbnb", "plugin:react/recommended", "prettier"],
     "rules": {
-        "prettier/prettier": "error"
+        "prettier/prettier": "error",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/jsx-indent": [2, 4]
     }
 }

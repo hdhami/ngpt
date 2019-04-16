@@ -17,6 +17,7 @@
         "babel-loader": "^8.0.4",
         "babel-preset-env": "^1.7.0",
         "babel-preset-react": "^6.24.1",
+        "editorconfig": "^0.15.2",
         "enzyme": "^3.7.0",
         "enzyme-adapter-react-16": "^1.6.0",
         "enzyme-to-json": "^3.3.4",
